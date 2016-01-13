@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using SystemOut.Toolbox;
 using SystemOut.WeatherApi.Core.Models.OpenWeatherMap;
 using SystemOutWeatherApi.Core;
 using Newtonsoft.Json;
@@ -35,8 +36,7 @@ namespace SystemOut.WeatherApi.Core
 
                 return new WeatherData
                 {
-                    // TODO: Fix when Toolbox is available in Github
-                    //Description = weatherString.FirstCharToUpper(),
+                    Description = weatherString.FirstCharToUpper(),
                     Location = jsonObject.name,
                     Temp = jsonObject.main.temp,
                     WeatherIconUri = new Uri($"http://openweathermap.org/img/w/{jsonObject.weather.First().icon}.png")

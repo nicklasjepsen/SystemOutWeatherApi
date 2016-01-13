@@ -123,6 +123,12 @@
     <Compile Include="WeatherServiceProvider.cs" />
     <EmbeddedResource Include="Properties\SystemOutWeatherApi.Core.rd.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Submodules\SystemOutToolbox\SystemOutToolbox.Core\SystemOutToolbox.Core.csproj">
+      <Project>{8C276B56-6B5D-4C3C-A6C4-29AF64CA6E54}</Project>
+      <Name>SystemOutToolbox.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

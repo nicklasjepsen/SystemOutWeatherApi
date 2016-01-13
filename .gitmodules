@@ -1,0 +1,3 @@
+[submodule "Submodules/SystemOutToolbox"]
+	path = Submodules/SystemOutToolbox
+	url = https://github.com/nicklasjepsen/SystemOutToolbox.git
