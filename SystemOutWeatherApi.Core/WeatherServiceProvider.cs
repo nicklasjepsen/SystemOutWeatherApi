@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using SystemOut.Toolbox;
+using SystemOut.Toolbox.Core;
 using SystemOut.WeatherApi.Core.Models.OpenWeatherMap;
 using SystemOutWeatherApi.Core;
 using Newtonsoft.Json;
