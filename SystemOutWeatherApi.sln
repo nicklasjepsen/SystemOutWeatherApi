@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemOut.Toolbox.Core", "Submodules\SystemOutToolbox\SystemOut.Toolbox.Core\SystemOut.Toolbox.Core.csproj", "{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,27 @@ Global
 		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x64.Build.0 = Release|Any CPU
 		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x86.ActiveCfg = Release|Any CPU
 		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x86.Build.0 = Release|Any CPU
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|Any CPU.Build.0 = Debug|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|ARM.Build.0 = Debug|ARM
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|x64.ActiveCfg = Debug|x64
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|x64.Build.0 = Debug|x64
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|x64.Deploy.0 = Debug|x64
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|x86.ActiveCfg = Debug|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|x86.Build.0 = Debug|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|x86.Deploy.0 = Debug|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|Any CPU.ActiveCfg = Release|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|ARM.ActiveCfg = Release|ARM
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|ARM.Build.0 = Release|ARM
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|ARM.Deploy.0 = Release|ARM
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|x64.ActiveCfg = Release|x64
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|x64.Build.0 = Release|x64
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|x64.Deploy.0 = Release|x64
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|x86.ActiveCfg = Release|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|x86.Build.0 = Release|x86
+		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

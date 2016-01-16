@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Globalization;
 using System.Threading.Tasks;
 using SystemOut.WeatherApi.Core.Models.OpenWeatherMap;
 using SystemOutWeatherApi.Core;
+using Windows.Globalization;
+using Windows.UI.Xaml;
 
 namespace SystemOut.WeatherApi.Core
 {
@@ -12,6 +15,8 @@ namespace SystemOut.WeatherApi.Core
 
     public class WeatherService
     {
+        public CultureInfo Localization { get; }
+
         private readonly IWeatherServiceProvider weatherServiceProvider;
         public string AppId { get; }
         public string Uri => $"http://api.openweathermap.org/data/2.5/weather?APPID={AppId}&units=metric&";
@@ -21,13 +26,31 @@ namespace SystemOut.WeatherApi.Core
             if (string.IsNullOrEmpty(appId))
                 throw new ArgumentException(nameof(appId));
             AppId = appId;
-            weatherServiceProvider = new WeatherServiceProvider();
+            Localization = new CultureInfo(ApplicationLanguages.PrimaryLanguageOverride);
+            weatherServiceProvider = new WeatherServiceProvider(Localization);
+        }
+
+        public WeatherService(string appId, CultureInfo localization)
+        {
+            if (string.IsNullOrEmpty(appId))
+                throw new ArgumentException(nameof(appId));
+            AppId = appId;
+            Localization = localization;
+            weatherServiceProvider = new WeatherServiceProvider(Localization);
         }
 
         public WeatherService(IHttpClient mock)
         {
             AppId = "InvalidAppId";
-            weatherServiceProvider = new WeatherServiceProvider(mock);
+            Localization = new CultureInfo(ApplicationLanguages.PrimaryLanguageOverride);
+            weatherServiceProvider = new WeatherServiceProvider(mock, Localization);
+        }
+
+        public WeatherService(IHttpClient mock, CultureInfo localization)
+        {
+            AppId = "InvalidAppId";
+            Localization = localization;
+            weatherServiceProvider = new WeatherServiceProvider(mock, Localization);
         }
 
         public async Task<WeatherData> GetWeatherDataForCoordinates(string lon, string lat)

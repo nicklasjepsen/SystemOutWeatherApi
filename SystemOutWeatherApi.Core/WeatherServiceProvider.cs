@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using SystemOut.Toolbox.Core;
 using SystemOut.WeatherApi.Core.Models.OpenWeatherMap;
 using SystemOutWeatherApi.Core;
+using Windows.Globalization;
 using Newtonsoft.Json;
 
 namespace SystemOut.WeatherApi.Core
@@ -14,14 +16,17 @@ namespace SystemOut.WeatherApi.Core
     internal class WeatherServiceProvider : IWeatherServiceProvider
     {
         private readonly IHttpClient httpClient;
-        public WeatherServiceProvider()
+        private readonly CultureInfo localization;
+        public WeatherServiceProvider(CultureInfo localization)
         {
             httpClient = new HttpClientImp();
+            this.localization = localization;
         }
 
-        public WeatherServiceProvider(IHttpClient mock)
+        public WeatherServiceProvider(IHttpClient mock, CultureInfo localization)
         {
             httpClient = mock;
+            this.localization = localization;
         }
 
         public async Task<WeatherData> ExecuteAsync(string uri)
@@ -47,6 +52,12 @@ namespace SystemOut.WeatherApi.Core
                 }
 
                 var weatherString = weatherDetails.description;
+                if (weatherDetails.id == 800)
+                {
+                    if (localization.TwoLetterISOLanguageName == new CultureInfo("da-DK").TwoLetterISOLanguageName)
+                        weatherString = "Danish";
+                }
+
                 if (string.IsNullOrEmpty(weatherString))
                     weatherString = weatherDetails.main;
 
