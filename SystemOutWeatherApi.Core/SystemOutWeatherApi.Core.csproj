@@ -120,6 +120,7 @@
     <Compile Include="Models\OpenWeatherMap\Sys.cs" />
     <Compile Include="Models\OpenWeatherMap\Weather.cs" />
     <Compile Include="Models\OpenWeatherMap\Wind.cs" />
+    <Compile Include="WeatherServiceException.cs" />
     <Compile Include="WeatherServiceProvider.cs" />
     <EmbeddedResource Include="Properties\SystemOutWeatherApi.Core.rd.xml" />
   </ItemGroup>

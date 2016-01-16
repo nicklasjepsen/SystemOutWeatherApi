@@ -30,22 +30,39 @@ namespace SystemOut.WeatherApi.Core
             try
             {
                 var json = await httpClient.GetStringAsync(uri);
-                var jsonObject = JsonConvert.DeserializeObject<Rootobject>(json);
-                var weatherString = jsonObject.weather.First().description;
+
+                Rootobject weatherData;
+                try
+                {
+                    weatherData = JsonConvert.DeserializeObject<Rootobject>(json);
+                }
+                catch (JsonSerializationException jsonException)
+                {
+                    throw new WeatherServiceException("Unable to parse the weather data into a known object type.", jsonException);
+                }
+
+                var weatherDetails = weatherData.weather.FirstOrDefault();
+                if (weatherDetails?.main == null)
+                {
+                    throw new WeatherServiceException("An unexpected weather data string was returned: " + json);
+                }
+
+                var weatherString = weatherDetails.description;
                 if (string.IsNullOrEmpty(weatherString))
-                    weatherString = jsonObject.weather.First().main;
+                    weatherString = weatherDetails.main;
 
                 return new WeatherData
                 {
                     Description = weatherString.FirstCharToUpper(),
-                    Location = jsonObject.name,
-                    Temp = jsonObject.main.temp,
-                    WeatherIconUri = new Uri($"http://openweathermap.org/img/w/{jsonObject.weather.First().icon}.png")
+                    Location = weatherData.name,
+                    Temp = weatherData.main.temp,
+                    WeatherIconUri = new Uri($"http://openweathermap.org/img/w/{weatherDetails.icon}.png")
                 };
             }
-            catch (HttpRequestException)
+            catch (HttpRequestException httpException)
             {
-                return null;
+                throw new WeatherServiceException("An http error occurred, probably due to a network error.", httpException);
+
             }
         }
 
