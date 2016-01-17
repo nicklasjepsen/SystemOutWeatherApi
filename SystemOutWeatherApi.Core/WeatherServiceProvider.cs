@@ -45,7 +45,7 @@ namespace SystemOut.WeatherApi.Core
                     throw new WeatherServiceException("Unable to parse the weather data into a known object type.", jsonException);
                 }
 
-                var weatherDetails = weatherData.weather.FirstOrDefault();
+                var weatherDetails = weatherData?.weather?.FirstOrDefault();
                 if (weatherDetails?.main == null)
                 {
                     throw new WeatherServiceException("An unexpected weather data string was returned: " + json);
