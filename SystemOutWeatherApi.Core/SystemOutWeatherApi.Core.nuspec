@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>0.1.0.0</version>
+    <title>SystemOut Weather Api</title>
+    <authors>Nicklas Møller Jepsen</authors>
+    <owners>SystemOut</owners>
+    <licenseUrl>https://github.com/nicklasjepsen/SystemOutWeatherApi/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/nicklasjepsen/SystemOutWeatherApi</projectUrl>
+    <iconUrl>http://openweathermap.org/themes/demo/assets/vendor/owm/images/OWM_logo32_32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A small UWP PCL lib for accessing OpenWeatherMap data.</description>
+    <releaseNotes>A small Universal library for accessing OpenWeatherMap data. Primarily used for my own projects :)</releaseNotes>
+    <copyright>Copyright SystemOut 2016</copyright>
+    <tags>OWM OpenWeatherMap UWP PCL</tags>
+  </metadata>
+</package>

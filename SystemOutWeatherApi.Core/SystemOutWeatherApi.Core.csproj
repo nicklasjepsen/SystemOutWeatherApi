@@ -16,7 +16,7 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-	<SupportedCultures>en;da;</SupportedCultures>
+    <SupportedCultures>en;da;</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -126,12 +126,6 @@
     <Compile Include="WeatherServiceException.cs" />
     <Compile Include="WeatherServiceProvider.cs" />
     <EmbeddedResource Include="Properties\SystemOutWeatherApi.Core.rd.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Submodules\SystemOutToolbox\SystemOut.Toolbox.Core\SystemOut.Toolbox.Core.csproj">
-      <Project>{2f3586e1-8d01-4608-adbf-7fdabae2c305}</Project>
-      <Name>SystemOut.Toolbox.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

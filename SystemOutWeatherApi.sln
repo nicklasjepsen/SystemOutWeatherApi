@@ -5,10 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemOutWeatherApi.Core", "SystemOutWeatherApi.Core\SystemOutWeatherApi.Core.csproj", "{2FAB59C0-755F-41F5-B603-630B283B78DA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", "{EE425D09-91FD-4E0D-AD14-59C14B0236C1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemOut.Toolbox.Core", "Submodules\SystemOutToolbox\SystemOut.Toolbox.Core\SystemOut.Toolbox.Core.csproj", "{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}"
 EndProject
 Global
@@ -39,22 +35,6 @@ Global
 		{2FAB59C0-755F-41F5-B603-630B283B78DA}.Release|x64.Build.0 = Release|x64
 		{2FAB59C0-755F-41F5-B603-630B283B78DA}.Release|x86.ActiveCfg = Release|x86
 		{2FAB59C0-755F-41F5-B603-630B283B78DA}.Release|x86.Build.0 = Release|x86
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|ARM.Build.0 = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|x64.Build.0 = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Debug|x86.Build.0 = Debug|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|ARM.ActiveCfg = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|ARM.Build.0 = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x64.ActiveCfg = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x64.Build.0 = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x86.ActiveCfg = Release|Any CPU
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305}.Release|x86.Build.0 = Release|Any CPU
 		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|Any CPU.Build.0 = Debug|x86
 		{C3F4A1CF-62BD-46E9-8824-4EB0A0B1B302}.Debug|ARM.ActiveCfg = Debug|ARM
@@ -79,8 +59,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{2F3586E1-8D01-4608-ADBF-7FDABAE2C305} = {EE425D09-91FD-4E0D-AD14-59C14B0236C1}
 	EndGlobalSection
 EndGlobal
