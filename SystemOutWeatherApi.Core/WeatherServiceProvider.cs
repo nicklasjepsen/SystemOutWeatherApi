@@ -25,14 +25,14 @@ namespace SystemOut.WeatherApi.Core
         {
             httpClient = new HttpClientImp();
             this.localization = localization;
-            resourceLoader = ResourceLoader.GetForCurrentView();
+            resourceLoader = ResourceLoader.GetForCurrentView("/SystemOutWeatherApi.Core/Resources");
         }
 
         public WeatherServiceProvider(IHttpClient mock, CultureInfo localization)
         {
             httpClient = mock;
             this.localization = localization;
-            resourceLoader = ResourceLoader.GetForCurrentView();
+            resourceLoader = ResourceLoader.GetForCurrentView("/SystemOutWeatherApi.Core/Resources");
         }
 
         public async Task<WeatherData> ExecuteAsync(string uri)
@@ -56,25 +56,29 @@ namespace SystemOut.WeatherApi.Core
                 {
                     throw new WeatherServiceException("An unexpected weather data string was returned: " + json);
                 }
+                string weatherString;
+                if (localization.TwoLetterISOLanguageName == new CultureInfo("da-DK").TwoLetterISOLanguageName)
+                    weatherString = resourceLoader.GetString(weatherDetails.id + string.Empty);
+                else
+                    weatherString = weatherDetails.description;
+                //if (weatherDetails.id == 800)
+                //{
 
-                var weatherString = weatherDetails.description;
-                if (weatherDetails.id == 800)
-                {
-                    //var resL = new ResourceLoader("Resources");
-                    //var resMan = ResourceManager.Current;
-                    //ResourceMap libmap = ResourceManager.Current.AllResourceMaps["SystemOutWeatherApi.Core"];
-                    //string lib = libmap.GetSubtree("Resources").GetValue(weatherDetails.id + string.Empty).ToString();
-                    //ResourceLoader resourceLoader = ResourceLoader.GetForViewIndependentUse();
-                    if (localization.TwoLetterISOLanguageName == new CultureInfo("da-DK").TwoLetterISOLanguageName)
-                    {
-                        //weatherString = ResourceLoader.GetStringForReference(new Uri("ms-resource://SystemOutWeatherApi.Core/Resources/200"));
-                        //weatherString = libmap.GetSubtree("Resources").GetValue(weatherDetails.id + string.Empty).ToString();
+                //    //var resL = new ResourceLoader("Resources");
+                //    //var resMan = ResourceManager.Current;
+                //    //ResourceMap libmap = ResourceManager.Current.AllResourceMaps["SystemOutWeatherApi.Core"];
+                //    //string lib = libmap.GetSubtree("Resources").GetValue(weatherDetails.id + string.Empty).ToString();
+                //    //ResourceLoader resourceLoader = ResourceLoader.GetForViewIndependentUse();
+                //    if (localization.TwoLetterISOLanguageName == new CultureInfo("da-DK").TwoLetterISOLanguageName)
+                //    {
+                //        //weatherString = ResourceLoader.GetStringForReference(new Uri("ms-resource://SystemOutWeatherApi.Core/Resources/200"));
+                //        //weatherString = libmap.GetSubtree("Resources").GetValue(weatherDetails.id + string.Empty).ToString();
                         
-                            weatherString =
-                                resourceLoader.GetString(weatherDetails.id + string.Empty);
+                //            weatherString =
+                //                resourceLoader.GetString(weatherDetails.id + string.Empty);
                         
-                    }
-                }
+                //    }
+                //}
 
                 if (string.IsNullOrEmpty(weatherString))
                     weatherString = weatherDetails.main;
