@@ -27,7 +27,7 @@ namespace UnitTestProject1
             var provider = new WeatherService(new TestMock("Assets/TestData/WeatherId800.json"), new CultureInfo("da-DK"));
             var result = await provider.GetWeatherDataForCity("copenhagen");
             Assert.IsNotNull(result);
-            Assert.AreEqual("Danish", result.Description);
+            Assert.AreEqual("skyfrit", result.Description);
         }
     }
 
