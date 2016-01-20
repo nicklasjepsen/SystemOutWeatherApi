@@ -37,6 +37,7 @@ namespace SystemOut.WeatherApi.Core
 
         public async Task<WeatherData> ExecuteAsync(string uri)
         {
+            
             try
             {
                 var json = await httpClient.GetStringAsync(uri);
@@ -61,24 +62,6 @@ namespace SystemOut.WeatherApi.Core
                     weatherString = resourceLoader.GetString(weatherDetails.id + string.Empty);
                 else
                     weatherString = weatherDetails.description;
-                //if (weatherDetails.id == 800)
-                //{
-
-                //    //var resL = new ResourceLoader("Resources");
-                //    //var resMan = ResourceManager.Current;
-                //    //ResourceMap libmap = ResourceManager.Current.AllResourceMaps["SystemOutWeatherApi.Core"];
-                //    //string lib = libmap.GetSubtree("Resources").GetValue(weatherDetails.id + string.Empty).ToString();
-                //    //ResourceLoader resourceLoader = ResourceLoader.GetForViewIndependentUse();
-                //    if (localization.TwoLetterISOLanguageName == new CultureInfo("da-DK").TwoLetterISOLanguageName)
-                //    {
-                //        //weatherString = ResourceLoader.GetStringForReference(new Uri("ms-resource://SystemOutWeatherApi.Core/Resources/200"));
-                //        //weatherString = libmap.GetSubtree("Resources").GetValue(weatherDetails.id + string.Empty).ToString();
-                        
-                //            weatherString =
-                //                resourceLoader.GetString(weatherDetails.id + string.Empty);
-                        
-                //    }
-                //}
 
                 if (string.IsNullOrEmpty(weatherString))
                     weatherString = weatherDetails.main;

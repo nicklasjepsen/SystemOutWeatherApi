@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>SystemOutWeatherApi</id>
+        <version>0.1.0.3</version>
+        <title>SystemOut Weather Api</title>
+        <authors>Nicklas Møller Jepsen</authors>
+        <owners>SystemOut</owners>
+        <licenseUrl>https://github.com/nicklasjepsen/SystemOutWeatherApi/blob/master/License.txt</licenseUrl>
+        <projectUrl>https://github.com/nicklasjepsen/SystemOutWeatherApi</projectUrl>
+        <iconUrl>http://openweathermap.org/themes/demo/assets/vendor/owm/images/OWM_logo32_32.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A small UWP PCL lib for accessing OpenWeatherMap data.</description>
+        <releaseNotes>A small Universal library for accessing OpenWeatherMap data. Primarily used for my own projects :)</releaseNotes>
+        <copyright>Copyright SystemOut 2016</copyright>
+        <tags>OWM OpenWeatherMap UWP PCL</tags>
+        <dependencies>
+            <dependency id="SystemOutToolbox" version="0.1.0.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\SystemOutWeatherApi.Core\bin\x86\Release\SystemOutWeatherApi.Core.dll" target="lib\net\SystemOutWeatherApi.Core.dll" />
+        <file src="..\SystemOutWeatherApi.Core\bin\x86\Release\SystemOutWeatherApi.Core.pdb" target="lib\net\SystemOutWeatherApi.Core.pdb" />
+        <file src="..\SystemOutWeatherApi.Core\bin\x86\Release\SystemOutWeatherApi.Core.pri" target="lib\net\SystemOutWeatherApi.Core.pri" />
+        <file src="..\SystemOutWeatherApi.Core\bin\x86\Release\SystemOutWeatherApi.Core.dll" target="lib\portable-net45+win8\SystemOutWeatherApi.Core.dll" />
+        <file src="..\SystemOutWeatherApi.Core\bin\x86\Release\SystemOutWeatherApi.Core.pdb" target="lib\portable-net45+win8\SystemOutWeatherApi.Core.pdb" />
+        <file src="..\SystemOutWeatherApi.Core\bin\x86\Release\SystemOutWeatherApi.Core.pri" target="lib\portable-net45+win8\SystemOutWeatherApi.Core.pri" />
+    </files>
+</package>

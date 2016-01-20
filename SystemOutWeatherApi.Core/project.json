@@ -2,7 +2,7 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "Newtonsoft.Json": "8.0.2",
-    "SystemOutToolbox": "0.1.0"
+    "SystemOutToolbox": "0.1.0.2"
   },
   "frameworks": {
     "uap10.0": {}
