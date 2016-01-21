@@ -117,224 +117,223 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-<data name="200" xml:space="preserve">
-	<value>torden med byer</value>
-</data>
-<data name="201" xml:space="preserve">
-	<value>torden med regn</value>
-</data>
-<data name="202" xml:space="preserve">
-	<value>torden med kraftig regn</value>
-</data>
-<data name="210" xml:space="preserve">
-	<value>svag torden</value>
-</data>
-<data name="211" xml:space="preserve">
-	<value>torden</value>
-</data>
-<data name="212" xml:space="preserve">
-	<value>kraftig torden</value>
-</data>
-<data name="221" xml:space="preserve">
-	<value>voldsom torden</value>
-</data>
-<data name="230" xml:space="preserve">
-	<value>torden med let støvregn</value>
-</data>
-<data name="231" xml:space="preserve">
-	<value>torden med støvregn</value>
-</data>
-<data name="232" xml:space="preserve">
-	<value>torden med tung støvregn</value>
-</data>
-<data name="300" xml:space="preserve">
-	<value>let støvregn</value>
-</data>
-<data name="301" xml:space="preserve">
-	<value>drizzle	 09d</value>
-</data>
-<data name="302" xml:space="preserve">
-	<value>tung støvregn</value>
-</data>
-<data name="310" xml:space="preserve">
-	<value>let støvregn</value>
-</data>
-<data name="311" xml:space="preserve">
-	<value>støvregn</value>
-</data>
-<data name="312" xml:space="preserve">
-	<value>tung støvregn</value>
-</data>
-<data name="313" xml:space="preserve">
-	<value>silende regn og støvregn</value>
-</data>
-<data name="314" xml:space="preserve">
-	<value>tung silende regn og støvregn</value>
-</data>
-<data name="321" xml:space="preserve">
-	<value>silende støvregn</value>
-</data>
-<data name="500" xml:space="preserve">
-	<value>let regn</value>
-</data>
-<data name="501" xml:space="preserve">
-	<value>regn</value>
-</data>
-<data name="502" xml:space="preserve">
-	<value>kraftig regn</value>
-</data>
-<data name="503" xml:space="preserve">
-	<value>meget kraftig regn</value>
-</data>
-<data name="504" xml:space="preserve">
-	<value>ekstrem regn</value>
-</data>
-<data name="511" xml:space="preserve">
-	<value>frysende regn</value>
-</data>
-<data name="520" xml:space="preserve">
-	<value>let silende regn</value>
-</data>
-<data name="521" xml:space="preserve">
-	<value>silende regn</value>
-</data>
-<data name="522" xml:space="preserve">
-	<value>kraftig silende regn</value>
-</data>
-<data name="531" xml:space="preserve">
-	<value>voldsom silende regn</value>
-</data>
-<data name="600" xml:space="preserve">
-	<value>let sne</value>
-</data>
-<data name="601" xml:space="preserve">
-	<value>sne</value>
-</data>
-<data name="602" xml:space="preserve">
-	<value>kraftig sne</value>
-</data>
-<data name="611" xml:space="preserve">
-	<value>slud</value>
-</data>
-<data name="612" xml:space="preserve">
-	<value>kraftig slud</value>
-</data>
-<data name="615" xml:space="preserve">
-	<value>let regn og sne</value>
-</data>
-<data name="616" xml:space="preserve">
-	<value>regn og sne</value>
-</data>
-<data name="620" xml:space="preserve">
-	<value>let sne</value>
-</data>
-<data name="621" xml:space="preserve">
-	<value>kraftig sne</value>
-</data>
-<data name="622" xml:space="preserve">
-	<value>kraftig tung sne</value>
-</data>
-<data name="701" xml:space="preserve">
-	<value>let tåge</value>
-</data>
-<data name="711" xml:space="preserve">
-	<value>smog</value>
-</data>
-<data name="721" xml:space="preserve">
-	<value>dis</value>
-</data>
-<data name="731" xml:space="preserve">
-	<value>sand, støv og hvirvler</value>
-</data>
-<data name="741" xml:space="preserve">
-	<value>tåge</value>
-</data>
-<data name="751" xml:space="preserve">
-	<value>sand</value>
-</data>
-<data name="761" xml:space="preserve">
-	<value>støv</value>
-</data>
-<data name="762" xml:space="preserve">
-	<value>volkanisk aske</value>
-</data>
-<data name="771" xml:space="preserve">
-	<value>byger</value>
-</data>
-<data name="781" xml:space="preserve">
-	<value>tornado</value>
-</data>
-<data name="800" xml:space="preserve">
-	<value>skyfrit</value>
-</data>
-<data name="801" xml:space="preserve">
-	<value>enkelte skyer</value>
-</data>
-<data name="802" xml:space="preserve">
-	<value>spredte skyer</value>
-</data>
-<data name="803" xml:space="preserve">
-	<value>delvist overskyet</value>
-</data>
-<data name="804" xml:space="preserve">
-	<value>overskyet</value>
-</data>
-<data name="900" xml:space="preserve">
-	<value>tornado</value>
-</data>
-<data name="901" xml:space="preserve">
-	<value>tropisk storm</value>
-</data>
-<data name="902" xml:space="preserve">
-	<value>orkan</value>
-</data>
-<data name="903" xml:space="preserve">
-	<value>kulde</value>
-</data>
-<data name="904" xml:space="preserve">
-	<value>varme</value>
-</data>
-<data name="905" xml:space="preserve">
-	<value>vind</value>
-</data>
-<data name="906" xml:space="preserve">
-	<value>hagl</value>
-</data>
-<data name="951" xml:space="preserve">
-	<value>roligt</value>
-</data>
-<data name="952" xml:space="preserve">
-	<value>let vind</value>
-</data>
-<data name="953" xml:space="preserve">
-	<value>mild vind</value>
-</data>
-<data name="954" xml:space="preserve">
-	<value>moderat vind</value>
-</data>
-<data name="955" xml:space="preserve">
-	<value>frisk vind</value>
-</data>
-<data name="956" xml:space="preserve">
-	<value>kraftig vind</value>
-</data>
-<data name="957" xml:space="preserve">
-	<value>næsten kuling</value>
-</data>
-<data name="958" xml:space="preserve">
-	<value>kuling</value>
-</data>
-<data name="959" xml:space="preserve">
-	<value>voldsom kuling</value>
-</data>
-<data name="960" xml:space="preserve">
-	<value>storm</value>
-</data>
-<data name="961" xml:space="preserve">
-	<value>voldsom storm</value>
-</data>
-<data name="962" xml:space="preserve">
-	<value>orkan</value>
-</data>
-
+  <data name="200" xml:space="preserve">
+    <value>torden med byer</value>
+  </data>
+  <data name="201" xml:space="preserve">
+    <value>torden med regn</value>
+  </data>
+  <data name="202" xml:space="preserve">
+    <value>torden med kraftig regn</value>
+  </data>
+  <data name="210" xml:space="preserve">
+    <value>svag torden</value>
+  </data>
+  <data name="211" xml:space="preserve">
+    <value>torden</value>
+  </data>
+  <data name="212" xml:space="preserve">
+    <value>kraftig torden</value>
+  </data>
+  <data name="221" xml:space="preserve">
+    <value>voldsom torden</value>
+  </data>
+  <data name="230" xml:space="preserve">
+    <value>torden med let støvregn</value>
+  </data>
+  <data name="231" xml:space="preserve">
+    <value>torden med støvregn</value>
+  </data>
+  <data name="232" xml:space="preserve">
+    <value>torden med tung støvregn</value>
+  </data>
+  <data name="300" xml:space="preserve">
+    <value>let støvregn</value>
+  </data>
+  <data name="301" xml:space="preserve">
+    <value>støvregn</value>
+  </data>
+  <data name="302" xml:space="preserve">
+    <value>tung støvregn</value>
+  </data>
+  <data name="310" xml:space="preserve">
+    <value>let støvregn</value>
+  </data>
+  <data name="311" xml:space="preserve">
+    <value>støvregn</value>
+  </data>
+  <data name="312" xml:space="preserve">
+    <value>tung støvregn</value>
+  </data>
+  <data name="313" xml:space="preserve">
+    <value>silende regn og støvregn</value>
+  </data>
+  <data name="314" xml:space="preserve">
+    <value>tung silende regn og støvregn</value>
+  </data>
+  <data name="321" xml:space="preserve">
+    <value>silende støvregn</value>
+  </data>
+  <data name="500" xml:space="preserve">
+    <value>let regn</value>
+  </data>
+  <data name="501" xml:space="preserve">
+    <value>regn</value>
+  </data>
+  <data name="502" xml:space="preserve">
+    <value>kraftig regn</value>
+  </data>
+  <data name="503" xml:space="preserve">
+    <value>meget kraftig regn</value>
+  </data>
+  <data name="504" xml:space="preserve">
+    <value>ekstrem regn</value>
+  </data>
+  <data name="511" xml:space="preserve">
+    <value>frysende regn</value>
+  </data>
+  <data name="520" xml:space="preserve">
+    <value>let silende regn</value>
+  </data>
+  <data name="521" xml:space="preserve">
+    <value>silende regn</value>
+  </data>
+  <data name="522" xml:space="preserve">
+    <value>kraftig silende regn</value>
+  </data>
+  <data name="531" xml:space="preserve">
+    <value>voldsom silende regn</value>
+  </data>
+  <data name="600" xml:space="preserve">
+    <value>let sne</value>
+  </data>
+  <data name="601" xml:space="preserve">
+    <value>sne</value>
+  </data>
+  <data name="602" xml:space="preserve">
+    <value>kraftig sne</value>
+  </data>
+  <data name="611" xml:space="preserve">
+    <value>slud</value>
+  </data>
+  <data name="612" xml:space="preserve">
+    <value>kraftig slud</value>
+  </data>
+  <data name="615" xml:space="preserve">
+    <value>let regn og sne</value>
+  </data>
+  <data name="616" xml:space="preserve">
+    <value>regn og sne</value>
+  </data>
+  <data name="620" xml:space="preserve">
+    <value>let sne</value>
+  </data>
+  <data name="621" xml:space="preserve">
+    <value>kraftig sne</value>
+  </data>
+  <data name="622" xml:space="preserve">
+    <value>kraftig tung sne</value>
+  </data>
+  <data name="701" xml:space="preserve">
+    <value>dis</value>
+  </data>
+  <data name="711" xml:space="preserve">
+    <value>smog</value>
+  </data>
+  <data name="721" xml:space="preserve">
+    <value>dis</value>
+  </data>
+  <data name="731" xml:space="preserve">
+    <value>sand, støv og hvirvler</value>
+  </data>
+  <data name="741" xml:space="preserve">
+    <value>tåge</value>
+  </data>
+  <data name="751" xml:space="preserve">
+    <value>sand</value>
+  </data>
+  <data name="761" xml:space="preserve">
+    <value>støv</value>
+  </data>
+  <data name="762" xml:space="preserve">
+    <value>volkanisk aske</value>
+  </data>
+  <data name="771" xml:space="preserve">
+    <value>byger</value>
+  </data>
+  <data name="781" xml:space="preserve">
+    <value>tornado</value>
+  </data>
+  <data name="800" xml:space="preserve">
+    <value>skyfrit</value>
+  </data>
+  <data name="801" xml:space="preserve">
+    <value>enkelte skyer</value>
+  </data>
+  <data name="802" xml:space="preserve">
+    <value>spredte skyer</value>
+  </data>
+  <data name="803" xml:space="preserve">
+    <value>delvist overskyet</value>
+  </data>
+  <data name="804" xml:space="preserve">
+    <value>overskyet</value>
+  </data>
+  <data name="900" xml:space="preserve">
+    <value>tornado</value>
+  </data>
+  <data name="901" xml:space="preserve">
+    <value>tropisk storm</value>
+  </data>
+  <data name="902" xml:space="preserve">
+    <value>orkan</value>
+  </data>
+  <data name="903" xml:space="preserve">
+    <value>kulde</value>
+  </data>
+  <data name="904" xml:space="preserve">
+    <value>varme</value>
+  </data>
+  <data name="905" xml:space="preserve">
+    <value>vind</value>
+  </data>
+  <data name="906" xml:space="preserve">
+    <value>hagl</value>
+  </data>
+  <data name="951" xml:space="preserve">
+    <value>roligt</value>
+  </data>
+  <data name="952" xml:space="preserve">
+    <value>let vind</value>
+  </data>
+  <data name="953" xml:space="preserve">
+    <value>mild vind</value>
+  </data>
+  <data name="954" xml:space="preserve">
+    <value>moderat vind</value>
+  </data>
+  <data name="955" xml:space="preserve">
+    <value>frisk vind</value>
+  </data>
+  <data name="956" xml:space="preserve">
+    <value>kraftig vind</value>
+  </data>
+  <data name="957" xml:space="preserve">
+    <value>næsten kuling</value>
+  </data>
+  <data name="958" xml:space="preserve">
+    <value>kuling</value>
+  </data>
+  <data name="959" xml:space="preserve">
+    <value>voldsom kuling</value>
+  </data>
+  <data name="960" xml:space="preserve">
+    <value>storm</value>
+  </data>
+  <data name="961" xml:space="preserve">
+    <value>voldsom storm</value>
+  </data>
+  <data name="962" xml:space="preserve">
+    <value>orkan</value>
+  </data>
 </root>
